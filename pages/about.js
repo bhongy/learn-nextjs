@@ -1,7 +1,12 @@
-const About = () => (
-  <div>
-    <p>About Page</p>
-  </div>
-);
+// import { MainLayout } from "../components/MainLayout";
+import { withLayout } from "../components/MainLayout";
 
-export default About;
+// const About = () => (
+//   <MainLayout>
+//     <p>About Page</p>
+//   </MainLayout>
+// );
+
+const About = () => <p>About Page</p>;
+
+export default withLayout(About);
