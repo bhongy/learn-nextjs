@@ -1,0 +1,16 @@
+{
+  "name": "learns-nextjs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:bhongy/learns-nextjs.git",
+  "author": "Thanik Bhongbhibhat <bhongbhibhat@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "next"
+  },
+  "dependencies": {
+    "next": "^4.1.4",
+    "react": "^16.1.0",
+    "react-dom": "^16.1.0"
+  }
+}
