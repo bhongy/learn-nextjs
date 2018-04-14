@@ -1,9 +1,9 @@
 import Link from "next/link";
 import MainLayout from "../components/MainLayout";
 
-const PostLink = ({ title }) => (
+const PostLink = ({ id, title }) => (
   <p>
-    <Link href={{ pathname: "/post", query: { title } }}>
+    <Link as={`/p/${id}`} href={{ pathname: "/post", query: { title } }}>
       <a>{title}</a>
     </Link>
   </p>
@@ -13,9 +13,9 @@ const Index = () => (
   <MainLayout>
     <h1>My Blog</h1>
     <nav>
-      <PostLink title="Hello Next.js" />
-      <PostLink title="Learn Next.js is awesome" />
-      <PostLink title="Deploy apps with Zeit" />
+      <PostLink id="hello-nextjs" title="Hello Next.js" />
+      <PostLink id="learn-nextjs" title="Learn Next.js is awesome" />
+      <PostLink id="deploy-nextjs" title="Deploy apps with Zeit" />
     </nav>
   </MainLayout>
 );
