@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { MainLayout } from "../components/MainLayout";
+import MainLayout from "../components/MainLayout";
 
 const PostLink = ({ title }) => (
   <p>
