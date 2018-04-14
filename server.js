@@ -9,9 +9,9 @@ nextApp
   .then(() => {
     const server = express();
 
-    server.get("/p/:id", (req, res) => {
-      const actualPage = "/post";
-      const queryParams = { title: req.params.id };
+    server.get("/show/:id", (req, res) => {
+      const actualPage = "/show";
+      const queryParams = { id: req.params.id };
       nextApp.render(req, res, actualPage, queryParams);
     });
 
