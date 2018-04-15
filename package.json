@@ -6,7 +6,9 @@
   "author": "Thanik Bhongbhibhat <bhongbhibhat@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node server.js"
+    "dev": "node server.js",
+    "start": "NODE_ENV=production node server.js",
+    "build": "next build"
   },
   "dependencies": {
     "express": "^4.16.3",
