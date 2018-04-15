@@ -1,7 +1,7 @@
 {
   "name": "learns-nextjs",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "repository": "git@github.com:bhongy/learns-nextjs.git",
   "author": "Thanik Bhongbhibhat <bhongbhibhat@gmail.com>",
   "license": "MIT",
