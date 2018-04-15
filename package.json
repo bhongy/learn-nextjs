@@ -9,9 +9,9 @@
     "dev": "node server.js",
     "start": "NODE_ENV=production node server.js",
     "build": "next build",
-    "make-static": "next build && next export",
+    "build-static": "next build && next export",
     "serve-static": "node static-server.js",
-    "analyze-bundle": "ANALYZE=1 yarn build"
+    "analyze-bundle": "ANALYZE=1 next build"
   },
   "dependencies": {
     "express": "^4.16.3",
