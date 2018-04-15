@@ -8,7 +8,9 @@
   "scripts": {
     "dev": "node server.js",
     "start": "NODE_ENV=production node server.js",
-    "build": "next build"
+    "build": "next build",
+    "make-static": "next build && next export",
+    "serve-static": "node static-server.js"
   },
   "dependencies": {
     "express": "^4.16.3",
