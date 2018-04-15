@@ -10,7 +10,8 @@
     "start": "NODE_ENV=production node server.js",
     "build": "next build",
     "make-static": "next build && next export",
-    "serve-static": "node static-server.js"
+    "serve-static": "node static-server.js",
+    "analyze-bundle": "ANALYZE=1 yarn build"
   },
   "dependencies": {
     "express": "^4.16.3",
@@ -19,5 +20,8 @@
     "react": "16.3.1",
     "react-dom": "16.3.1",
     "react-markdown": "^3.3.0"
+  },
+  "devDependencies": {
+    "webpack-bundle-analyzer": "^2.11.1"
   }
 }
